@@ -10,6 +10,18 @@ void shalom(void){
 	glClear(GL_COLOR_BUFFER_BIT);
 	glColor3f(0.74, 0.67, 0.71);
 	
+	//POINTS
+	glPointSize(5.0);
+	glBegin(GL_POINTS);
+	glVertex2f(0.0, 0.0);
+	glEnd();
+	
+	//LINES
+	glBegin(GL_LINES);
+	glVertex2f(0.3, 0.0);
+	glVertex2f(0.7, 0.0);
+	glEnd();
+	
 	//LINE STRIP
 	glBegin(GL_LINE_STRIP);
     glVertex2f(-0.8, 0.9);
@@ -38,6 +50,7 @@ void shalom(void){
     glVertex2f(0.8, 0.3);
     glEnd();
     
+    //TRIANGLE STRIP
     glBegin(GL_TRIANGLE_STRIP);
     glVertex2f(-0.9, -0.3);
     glVertex2f(-0.9, -0.9);
@@ -45,6 +58,7 @@ void shalom(void){
     glVertex2f(-0.8, -0.4);
     glEnd();
     
+    //QUADS
     glBegin(GL_QUADS);
     glVertex2f(-0.2, -0.3);
     glVertex2f(0.2, -0.3);
@@ -52,11 +66,46 @@ void shalom(void){
     glVertex2f(-0.2, -0.9);
     glEnd();
     
+    //QUAD STRIP
     glBegin(GL_QUAD_STRIP);
     glVertex2f(0.5, -0.3);
     glVertex2f(0.5, -0.9);
     glVertex2f(0.9, -0.3);
     glVertex2f(0.9, -0.9);
+    glEnd();
+    
+    //TUMPUKAN KUBUS
+    glBegin(GL_QUADS);
+    //TUMPUKAN 1
+    glVertex2f(-0.64, -0.07);
+    glVertex2f(-0.57, -0.07);
+    glVertex2f(-0.57, -0.07);
+    glVertex2f(-0.64, -0.07);
+    //-
+    glVertex2f(-0.55, -0.07);
+    glVertex2f(-0.48, -0.07);
+    glVertex2f(-0.48, -0.07);
+    glVertex2f(-0.55, -0.07);
+    //-
+    glVertex2f(-0.46, -0.07);
+    glVertex2f(-0.39, -0.07);
+    glVertex2f(-0.39, -0.07);
+    glVertex2f(-0.46, -0.07);
+    //TUMPUKAN 2
+    glVertex2f(-0.59, -0.05);
+    glVertex2f(-0.52, -0.05);
+    glVertex2f(-0.52, 0.05);
+    glVertex2f(-0.59, 0.05);
+    //-
+    glVertex2f(-0.50, -0.05);
+    glVertex2f(-0.43, -0.05);
+    glVertex2f(-0.43, 0.05);
+    glVertex2f(-0.50, 0.05);
+    //TUMPUKAN 3
+    glVertex2f(-0.55, 0.07);
+    glVertex2f(-0.48, 0.07);
+    glVertex2f(-0.48, 0.17);
+    glVertex2f(-0.55, 0.17);
     glEnd();
     
     glFlush();
