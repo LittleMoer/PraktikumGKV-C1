@@ -1,1 +1,1 @@
-# PraktikumGKV-C1
+# Praktikum Gravika dan Komputasi Visual
