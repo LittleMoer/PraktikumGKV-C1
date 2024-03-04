@@ -1,3 +1,9 @@
+/*  Nama/NIM         : Aura Arfannisa Az Zahra/24060122130097 
+    Nama File        : Praktikum2_Mobil2D.cpp
+    Deskripsi        : Membentuk mobil 2d menggunakan fungsi primitif
+    Hari, Tanggal    : Senin, 4 Maret 2024
+*/
+
 #include <windows.h>
 #include <GL\glut.h>
 #include <math.h>
