@@ -1,3 +1,9 @@
+/*  Nama/NIM         : Aura Arfannisa Az Zahra/24060122130097 
+    Nama File        : Praktikum2_Mobil2D.cpp
+    Deskripsi        : Membentuk lengan, telapak tangan, dan jari (metakarpal dan falang) bergerak 3D
+    Tanggal	     : 11 Maret 2024
+*/
+
 #include <GL/glut.h>
 
 static int shoulder = 0, elbow = 0, telapak = 0, metakarpal = 0, falang = 0;
